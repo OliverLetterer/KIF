@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name         = "KIF"
-  s.version      = "2.0.0.1"
+  s.version      = "2.0.0.2"
   s.summary      = "Keep It Functional - iOS UI acceptance testing in an OCUnit harness."
   s.homepage     = "https://github.com/kif-framework/KIF/"
   s.license      = 'Apache 2.0'
   s.authors      = 'Eric Firestone', 'Jim Puls', 'Brian Nickel'
-  s.source       = { :git => "https://github.com/kif-framework/KIF.git", :tag => "v2.0.0.1" }
+  s.source       = { :git => "https://github.com/OliverLetterer/KIF.git", :tag => "2.0.0.2" }
   s.platform     = :ios, '4.3'
   s.frameworks  = 'CoreGraphics'
   s.prefix_header_contents = '#import <CoreGraphics/CoreGraphics.h>'
-  s.default_subspec = 'SenTestingKit'
+  s.default_subspec = 'XCTest'
 
   s.subspec 'SenTestingKit' do |sentest|
     sentest.framework = 'SenTestingKit'
